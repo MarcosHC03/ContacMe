@@ -59,6 +59,7 @@ body {
 
 /* Description */
 .description {
+    width: 90%;
     margin: 20px auto;
 }
 
