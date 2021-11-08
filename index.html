@@ -1,55 +1,163 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <!-- Title -->
-    <title>Name - ContacMe</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Lato:ital,wght@1,300;1,400;1,700&family=Open+Sans+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
-    <!-- Icons [FontAwesome] -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
-</head>
-<body>
-    <!-- Wallpaper -->
-    <!--<div class="userWallpaper"></div>-->
-    <div class="container">
-        <!-- Logo/Img -->
-        <div class="logoImg"></div>
-        <!-- Name -->
-        <div class="name">
-            <h1>My Name</h1>
-        </div>
-        <!-- Description -->
-        <div class="description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi odio ipsum eos, porro iure sit!</p>
-        </div>
-        <!-- Social Networks -->
-        <div class="socialNetworks">
-            <!-- Personal Social Networks -->
-            <div class="personal">
-                <p>Personal:</p>
-                <a id="w" href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-                <a id="i" href="#"><i class="fab fa-instagram"></i> Instagram</a>
-                <a id="f" href="#"><i class="fab fa-facebook"></i> Facebook</a>
-                <a id="t" href="#"><i class="fab fa-twitter"></i> Twitter</a>
-            </div>
-            <!-- Professional Social Networks -->
-            <div class="professional">
-                <p>Professional:</p>
-                <a id="p" href="#"><i class="fas fa-briefcase"></i> Portafolio</a>
-                <a id="g" href="#"><i class="fab fa-github"></i> GitHub</a>
-                <a id="l" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
-            </div>
-        </div>
-    </div>
-    <div class="footer">
-        <a href="https://github.com/MarcosHC03/ContacMe.git">ContacMe</a>
-        <p>Marcos Carruego - 2021</p>
-    </div>
-</body>
-</html>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    font-size: 3vh;
+}
+
+/*.userWallpaper {
+    background: url(wallpaper2.jpg);
+}*/
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 1.5vw;
+}
+
+::-webkit-scrollbar-track {
+    background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+}
+
+/* Container */
+.container {
+    background: #eee;
+    border-radius: 10px;
+    width: 80%;
+    height: 90%;
+    margin: 70px auto;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+/* Logo */
+.logoImg {
+    background: url(wallpaper.jpg) center/cover;
+    border-radius: 50%;
+    margin: auto;
+    width: 20vh;
+    height: 20vh;
+}
+
+/* Name */
+.name {
+    font-family: 'Dancing Script', cursive;
+    margin: 10px;
+    padding: 5px;
+    font-size: 4vh;
+}
+
+/* Description */
+.description {
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Social Networks */
+.socialNetworks {
+    font-family: 'Lato', sans-serif;
+}
+
+.personal,
+.professional {
+    background: #ddd;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 10px;
+    width: 90%;
+}
+
+.personal p,
+.professional p {
+    padding: 5px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.personal a,
+.professional a {
+    background: #fff;
+    width: 35vw;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 5px;
+    text-decoration: none;
+    justify-content: center;
+    color: #000;
+    display: flex;
+}
+
+.personal i,
+.professional i {
+    display: flex;
+    align-items: center;
+    padding-right: 5px;
+}
+
+/* Personal */
+#w:hover {
+    background: #6c0;
+    color: #fff;
+}
+
+#i:hover {
+    background: linear-gradient(15deg, yellow, red,  purple, blue);
+    color: #fff;
+}
+
+#f:hover {
+    background: #3b5998;
+    color: #fff;
+}
+
+#t:hover {
+    background: #00acee;
+    color: #fff;
+}
+
+/* Professional */
+#p:hover {
+    background: #666;
+    color: #fff;
+}
+
+#g:hover {
+    background: #161b22;
+    color: #fff;
+}
+
+#l:hover {
+    background: #0e76a8;
+    color: #fff;
+}
+
+/* Footer */
+.footer {
+    background: #eee;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.footer a,
+.footer p {
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: #666;
+    margin: 5px;
+}
+
+.footer a:hover {
+    opacity: 0.7;
+}
